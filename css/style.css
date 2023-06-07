@@ -240,6 +240,7 @@ h3 {
     margin: 20px auto;
   }
   .wrapper {
+    padding: 20px 0;
     margin: 20px auto;
   }
 }
@@ -250,7 +251,6 @@ h3 {
     padding: 0 10px;
   }
   .header-wrapper {
-    padding: 20px 0;
     margin: 20px auto;
   }
   .wrapper {
