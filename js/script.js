@@ -242,21 +242,21 @@ taskInput.addEventListener("keyup", e => {
 
   if (totalHrs >= 5 && totalHrs <= 11) {
     //5:00 am to 11:00 am
-    document.getElementById('greet').innerHTML = "Good Morning";
+    document.getElementById('greet').innerHTML = "Good Morning!";
     customBg("'images/morning.jpg'");
   } else if (totalHrs >= 12 && totalHrs <= 14) {
     // 12:00 pm to 2:00 pm
-    document.getElementById('greet').innerHTML = "Good Noon";
+    document.getElementById('greet').innerHTML = "Good Noon!";
     customBg("'images/noon.jpg'");
   } else if (totalHrs >= 15 && totalHrs <= 17) {
     // 3:00 pm to 5:00 pm
-    document.getElementById('greet').innerHTML = "Good Afternoon";
+    document.getElementById('greet').innerHTML = "Good Afternoon!";
     customBg("'images/afternoon.jpg'");
   } else if (totalHrs >= 18 && totalHrs <= 19) {
     // 6:00 pm to 8:00 pm
-    document.getElementById('greet').innerHTML = "Good Evening";
+    document.getElementById('greet').innerHTML = "Good Evening!";
     customBg("'images/evening.jpg'");
   } else {
-    document.getElementById('greet').innerHTML = "Good Night";
+    document.getElementById('greet').innerHTML = "Good Night!";
     customBg("'images/night.jpg'");
   }
