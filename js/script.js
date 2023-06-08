@@ -252,7 +252,7 @@ taskInput.addEventListener("keyup", e => {
     // 2:00 pm to 4:00 pm
     document.getElementById('greet').innerHTML = "Good Afternoon!";
     customBg("'images/afternoon.jpg'");
-  } else if (totalHrs >= 16 && totalHrs <= 19) {
+  } else if (totalHrs >= 16 && totalHrs <= 18) {
     // 4:00 pm to 7:00 pm
     document.getElementById('greet').innerHTML = "Good Evening!";
     customBg("'images/evening.jpg'");
