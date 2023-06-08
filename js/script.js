@@ -228,6 +228,9 @@ taskInput.addEventListener("keyup", e => {
     }
 });
 
+// Creating variable of Username Prompt
+var username = prompt('Type your name here');
+
 // Custom Background
   var totalHrs = date.getHours(); // Get time in 24 Hours Format
 
@@ -242,22 +245,22 @@ taskInput.addEventListener("keyup", e => {
 
   if (totalHrs >= 5 && totalHrs <= 11) {
     //5:00 am to 11:00 am
-    document.getElementById('greet').innerHTML = "Good Morning!";
+    document.getElementById('greet').innerHTML = "Good Morning" + ", " + username +"!";
     customBg("'images/morning.jpg'");
   } else if (totalHrs >= 12 && totalHrs <= 13) {
     // 12:00 pm to 2:00 pm
-    document.getElementById('greet').innerHTML = "Good Noon!";
+    document.getElementById('greet').innerHTML = "Good Noon" + ", " + username +"!";
     customBg("'images/noon.jpg'");
   } else if (totalHrs >= 14 && totalHrs <= 15) {
     // 2:00 pm to 4:00 pm
-    document.getElementById('greet').innerHTML = "Good Afternoon!";
+    document.getElementById('greet').innerHTML = "Good Afternoon" + ", " + username +"!";
     customBg("'images/afternoon.jpg'");
   } else if (totalHrs >= 16 && totalHrs <= 18) {
     // 4:00 pm to 7:00 pm
-    document.getElementById('greet').innerHTML = "Good Evening!";
+    document.getElementById('greet').innerHTML = "Good Evening" + ", " + username +"!";
     customBg("'images/evening.jpg'");
   } else {
-    document.getElementById('greet').innerHTML = "Good Night!";
+    document.getElementById('greet').innerHTML = "Good Night" + ", " + username +"!";
     customBg("'images/night.jpg'");
   }
 
