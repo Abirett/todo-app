@@ -248,12 +248,12 @@ taskInput.addEventListener("keyup", e => {
     // 12:00 pm to 2:00 pm
     document.getElementById('greet').innerHTML = "Good Noon!";
     customBg("'images/noon.jpg'");
-  } else if (totalHrs >= 15 && totalHrs <= 17) {
-    // 3:00 pm to 5:00 pm
+  } else if (totalHrs >= 14 && totalHrs <= 16) {
+    // 2:00 pm to 4:00 pm
     document.getElementById('greet').innerHTML = "Good Afternoon!";
     customBg("'images/afternoon.jpg'");
-  } else if (totalHrs >= 18 && totalHrs <= 19) {
-    // 6:00 pm to 8:00 pm
+  } else if (totalHrs >= 16 && totalHrs <= 19) {
+    // 4:00 pm to 7:00 pm
     document.getElementById('greet').innerHTML = "Good Evening!";
     customBg("'images/evening.jpg'");
   } else {
