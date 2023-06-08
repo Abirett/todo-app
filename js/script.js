@@ -244,11 +244,11 @@ taskInput.addEventListener("keyup", e => {
     //5:00 am to 11:00 am
     document.getElementById('greet').innerHTML = "Good Morning!";
     customBg("'images/morning.jpg'");
-  } else if (totalHrs >= 12 && totalHrs <= 14) {
+  } else if (totalHrs >= 12 && totalHrs <= 13) {
     // 12:00 pm to 2:00 pm
     document.getElementById('greet').innerHTML = "Good Noon!";
     customBg("'images/noon.jpg'");
-  } else if (totalHrs >= 14 && totalHrs <= 16) {
+  } else if (totalHrs >= 14 && totalHrs <= 15) {
     // 2:00 pm to 4:00 pm
     document.getElementById('greet').innerHTML = "Good Afternoon!";
     customBg("'images/afternoon.jpg'");
