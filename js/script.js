@@ -248,7 +248,7 @@ var username = prompt('Type your name here');
     if (username === null || username === "") {
       document.getElementById("greet").innerHTML = "Good Morning" + ", " + "User" +"!";
     }else {
-      document.getElementById('greet').innerHTML = "Good Morning" + ", " + username +"!";
+      document.getElementById('greet').innerHTML = "Good Morning" + ", " + username.charAt(0).toUpperCase() + username.slice(1) +"!";
     }
     customBg("'images/morning.jpg'");
   } else if (totalHrs >= 12 && totalHrs <= 13) {
@@ -256,7 +256,7 @@ var username = prompt('Type your name here');
     if (username === null || username === "") {
       document.getElementById("greet").innerHTML = "Good Noon" + ", " + "User" +"!";
     }else {
-      document.getElementById('greet').innerHTML = "Good Noon" + ", " + username +"!";
+      document.getElementById('greet').innerHTML = "Good Noon" + ", " + username.charAt(0).toUpperCase() + username.slice(1) +"!";
     }
     customBg("'images/noon.jpg'");
   } else if (totalHrs >= 14 && totalHrs <= 15) {
@@ -264,7 +264,7 @@ var username = prompt('Type your name here');
     if (username === null || username === "") {
       document.getElementById("greet").innerHTML = "Good Afternoon" + ", " + "User" +"!";
     }else {
-      document.getElementById('greet').innerHTML = "Good Afternoon" + ", " + username +"!";
+      document.getElementById('greet').innerHTML = "Good Afternoon" + ", " + username.charAt(0).toUpperCase() + username.slice(1) +"!";
     }
     customBg("'images/afternoon.jpg'");
   } else if (totalHrs >= 16 && totalHrs <= 18) {
@@ -272,14 +272,14 @@ var username = prompt('Type your name here');
     if (username === null || username === "") {
       document.getElementById("greet").innerHTML = "Good Evening" + ", " + "User" +"!";
     }else {
-      document.getElementById('greet').innerHTML = "Good Evening" + ", " + username +"!";
+      document.getElementById('greet').innerHTML = "Good Evening" + ", " + username.charAt(0).toUpperCase() + username.slice(1) +"!";
     }
     customBg("'images/evening.jpg'");
   } else {
     if (username === null || username === "") {
       document.getElementById("greet").innerHTML = "Good Night" + ", " + "User" +"!";
     }else {
-      document.getElementById('greet').innerHTML = "Good Night" + ", " + username +"!";
+      document.getElementById('greet').innerHTML = "Good Night" + ", " + username.charAt(0).toUpperCase() + username.slice(1) +"!";
     }
     customBg("'images/night.jpg'");
   }
