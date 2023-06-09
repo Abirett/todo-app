@@ -244,23 +244,43 @@ var username = prompt('Type your name here');
   }
 
   if (totalHrs >= 5 && totalHrs <= 11) {
-    //5:00 am to 11:00 am
-    document.getElementById('greet').innerHTML = "Good Morning" + ", " + username +"!";
+    //5:00 am to 12:00 pm
+    if (username === null) {
+      document.getElementById("greet").innerHTML = "Good Morning" + ", " + "User" +"!";
+    }else {
+      document.getElementById('greet').innerHTML = "Good Morning" + ", " + username +"!";
+    }
     customBg("'images/morning.jpg'");
   } else if (totalHrs >= 12 && totalHrs <= 13) {
     // 12:00 pm to 2:00 pm
-    document.getElementById('greet').innerHTML = "Good Noon" + ", " + username +"!";
+    if (username === null) {
+      document.getElementById("greet").innerHTML = "Good Noon" + ", " + "User" +"!";
+    }else {
+      document.getElementById('greet').innerHTML = "Good Noon" + ", " + username +"!";
+    }
     customBg("'images/noon.jpg'");
   } else if (totalHrs >= 14 && totalHrs <= 15) {
     // 2:00 pm to 4:00 pm
-    document.getElementById('greet').innerHTML = "Good Afternoon" + ", " + username +"!";
+    if (username === null) {
+      document.getElementById("greet").innerHTML = "Good Afternoon" + ", " + "User" +"!";
+    }else {
+      document.getElementById('greet').innerHTML = "Good Afternoon" + ", " + username +"!";
+    }
     customBg("'images/afternoon.jpg'");
   } else if (totalHrs >= 16 && totalHrs <= 18) {
     // 4:00 pm to 7:00 pm
-    document.getElementById('greet').innerHTML = "Good Evening" + ", " + username +"!";
+    if (username === null) {
+      document.getElementById("greet").innerHTML = "Good Evening" + ", " + "User" +"!";
+    }else {
+      document.getElementById('greet').innerHTML = "Good Evening" + ", " + username +"!";
+    }
     customBg("'images/evening.jpg'");
   } else {
-    document.getElementById('greet').innerHTML = "Good Night" + ", " + username +"!";
+    if (username === null) {
+      document.getElementById("greet").innerHTML = "Good Night" + ", " + "User" +"!";
+    }else {
+      document.getElementById('greet').innerHTML = "Good Night" + ", " + username +"!";
+    }
     customBg("'images/night.jpg'");
   }
 
